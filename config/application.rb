@@ -19,5 +19,10 @@ module AddonsGemTest
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Normally you'd set these in a more secure place than application.rb. BUT this is a test app :)
+    ENV['LAUNCHBOX_USER_EMAIL'] = 'ben@addonlist.com'
+    ENV['LAUNCHBOX_USER_TOKEN'] = 'iXZfkrcSqcZW9pPvK6bv'
+
   end
 end
