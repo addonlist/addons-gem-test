@@ -116,6 +116,7 @@ PLATFORMS
 DEPENDENCIES
   addons (~> 0.0.5)
   coffee-rails (~> 4.0.0)
+  figaro
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.1)
