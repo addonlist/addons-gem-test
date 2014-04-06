@@ -21,7 +21,5 @@ module AddonsGemTest
     # config.i18n.default_locale = :de
 
     # Normally you'd set these in a more secure place than application.rb. BUT this is a test app :)
-    ENV['ADDONS_APP_ID'] = 'app_7180760f-e51f-47ec-a541-39d7d3a5abae'
-    ENV['ADDONS_APP_TOKEN'] = '171vKXyxSsTj9rWpQuPF'
   end
 end
