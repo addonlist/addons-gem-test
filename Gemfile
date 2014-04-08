@@ -48,3 +48,6 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'figaro' # Addons dependency
+
+gem 'rest_client'
+
