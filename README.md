@@ -26,8 +26,9 @@ end
 
 ### MongoLab Integration #1
 
-add mongoid to Gemfile
+add mongoid to Gemfile, remove sqlite3
 ```ruby
+# gem 'sqlite3'
 gem 'mongoid', github: 'mongoid/mongoid'
 ```
 
@@ -39,6 +40,14 @@ bundle install
 Add production config to config/mongoid.yml
 ````ruby
 production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
+      options:
+        max_retries: 30
+        retry_interval: 1
+        timeout: 15
+development:
   sessions:
     default:
       uri: <%= ENV['MONGOLAB_URI'] %>
