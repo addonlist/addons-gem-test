@@ -2,7 +2,7 @@
 
 ## Integrating with Addons is Simple
 
-* add `gem 'addons', '~> 0.0.7'` to your Gemfile
+* add `gem 'addons', '~> 0.0.9'` to your Gemfile
 * `bundle install` installs figaro
 * `rails generate addons:install --appid:'app_97308f3f-948a-4f90-879a-ea3155e5f6d7' --apptoken='pyw5WBzdfFBh5ta5K63g'` NOTE: Use your own APP_ID AND APP_TOKEN
 * SIGN UP FOR ADDONS LAUNCHBOX
