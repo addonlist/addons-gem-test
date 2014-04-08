@@ -104,3 +104,5 @@ module Test
   end
 end
 ````
+
+<a href="http://addons-gem-test.herokuapp.com/">Addons Gem Test App</a>
