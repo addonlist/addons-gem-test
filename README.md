@@ -26,21 +26,51 @@ end
 
 ### MongoLab Integration #1
 
-* add `gem 'mongoid'` to Gemfile
-* `bundle install`
-* add production configuration to `config/mongoid.yml`
+add mongoid to Gemfile
+```ruby
+gem 'mongoid', github: 'mongoid/mongoid'
+```
 
+run bundle install in Terminal
+```shell
+bundle install
+```
+
+Add production config to config/mongoid.yml
 ````ruby
 production:
   sessions:
     default:
       uri: <%= ENV['MONGOLAB_URI'] %>
       options:
-        consistency: :strong
         max_retries: 30
         retry_interval: 1
-        timeout: 30
+        timeout: 15
 ````
+
+Add Mongoid config to a model (app/models/email.rb)
+```ruby
+class Email
+  include Mongoid::Document
+  include Mongoid::Timestamps
+
+  field :to, type: string
+  field :from, type: String
+  field :subject, type: String
+  field :body, type: String
+end
+
+```
+
+Change config/application.rb
+```ruby
+# MONGOID CONFIG
+#require 'rails/all'
+require "action_controller/railtie"
+require "action_mailer/railtie"
+# require "active_resource/railtie"
+require "sprockets/railtie"
+```
 
 ### MongoLab Integration #2
 
