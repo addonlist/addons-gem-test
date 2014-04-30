@@ -4,9 +4,9 @@
 
 * add `gem 'addons', '~> 0.0.9'` to your Gemfile
 * `bundle install` installs figaro
-* `rails generate addons:install --appid:'app_97308f3f-948a-4f90-879a-ea3155e5f6d7' --apptoken='pyw5WBzdfFBh5ta5K63g'` NOTE: Use your own APP_ID AND APP_TOKEN
+* `rails generate addons:install --apiid:'app_74c6e4f2-c8dd-41e1-b133-876c4ce6c6f7' --authtoken='V2Naw103kivzMXj_Afw7cw'` NOTE: Use your own APP_ID AND APP_TOKEN
 * SIGN UP FOR ADDONS LAUNCHBOX
-* set `ENV['ADDONS_APP_ID']` and `ENV['ADDONS_APP_TOKEN']` environment variables
+* set `ENV['ADDONS_API_ID']` and `ENV['ADDONS_AUTH_TOKEN']` environment variables
 * `rails console` or `rails server` will have set all environment variables and create a config/application.yml
 * HEROKU USERS ONLY: `rake figaro:heroku` will set all your heroku environment variables
 * Add code to integrate with your services. All environment variables for those services are securely populated by the Addons gem
@@ -16,7 +16,7 @@
 ```ruby
 def send_simple_message(email)
   RestClient.post "https://api:#{ENV['MAILGUN_API_KEY']}"\
-  "@api.mailgun.net/v2/sandbox28428.mailgun.org/messages",
+  "@api.mailgun.net/v2/\#{ENV['MAILGUN_SMTP_LOGIN'].match(/@(.*)$/)[1]}/messages",
   :from => email.from,
   :to => email.to,
   :subject => email.subject,
