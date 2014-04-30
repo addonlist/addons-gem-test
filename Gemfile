@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -25,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # APPILCATION GEMS
-gem 'addons', '~> 0.0.9'
+gem 'addons', '~> 0.1.3'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -49,4 +50,4 @@ gem 'figaro' # Addons dependency
 gem 'rest_client'
 gem 'mongoid', github: 'mongoid/mongoid'
 
-gem 'debugger', group: :development
+#gem 'debugger', group: :development
