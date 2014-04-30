@@ -77,7 +77,7 @@ class EmailsController < ApplicationController
 
     def send_simple_message(email)
       RestClient.post "https://api:#{ENV['MAILGUN_API_KEY']}"\
-      "@api.mailgun.net/v2/app7d41aa77b66a469180084fdaba10ecd8.mailgun.org/messages",
+      "@api.mailgun.net/v2/#{ENV['MAILGUN_SMTP_LOGIN'].match(/@(.*)$/)[1]}/messages",
       :from => email.from,
       :to => email.to,
       :subject => email.subject,
