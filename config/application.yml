@@ -1,8 +1,7 @@
-MONGOLAB_URI: mongodb://AddonList_app_74c6e4f2-c8dd-41e1-b133-876c4ce6c6f7:qacp9jqsen8mdbu41s28sbiitj@ds047437.mongolab.com:47437/AddonList_app_74c6e4f2-c8dd-41e1-b133-876c4ce6c6f7
-MAILGUN_SMTP_LOGIN: postmaster@app6509d985772e47fc9b2955be45a6fde9.mailgun.org
+MAILGUN_SMTP_LOGIN: postmaster@app707c8edcc09b477599eabec7a76918c7.mailgun.org
 MAILGUN_SMTP_SERVER: smtp.mailgun.org
-MAILGUN_API_KEY: key-5lgoaiy0egj5pc9bcdh79m6o4j8epd78
+MAILGUN_API_KEY: key-7h1n91t2e4v2o45xm-ieyfutv6zvm8t0
 MAILGUN_SMTP_PORT: 587
-MAILGUN_SMTP_PASSWORD: 51bl9auiklq8
+MAILGUN_SMTP_PASSWORD: 3goybfd5h2l6
 ADDONS_API_ID: app_99828e59-709a-4513-bfca-e9bdaef942f3
 ADDONS_AUTH_TOKEN: uGw66h3rKwRBOytE4WUZ6g
