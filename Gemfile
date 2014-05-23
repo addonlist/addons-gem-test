@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # APPILCATION GEMS
-gem 'addons', '~> 0.1.3'
+gem 'addons', '~> 0.1.4'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
