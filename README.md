@@ -4,7 +4,7 @@
 
 * add `gem 'addons', '~> 0.1.4'` to your Gemfile
 * `bundle install` installs figaro
-* `rails generate addons:install --apiid:'app_99828e59-709a-4513-bfca-e9bdaef942f3' --authtoken='uGw66h3rKwRBOytE4WUZ6g'` NOTE: Use your own APP_ID AND APP_TOKEN
+* `rails generate addons:install --apiid:'YOUR_API_ID_HERE' --authtoken='YOUR_API_AUTH_TOKEN_HERE'` NOTE: Use your own APP_ID AND APP_TOKEN
 * SIGN UP FOR ADDONS LAUNCHBOX
 * set `ENV['ADDONS_API_ID']` and `ENV['ADDONS_AUTH_TOKEN']` environment variables
 * `rails console` or `rails server` will have set all environment variables and create a config/application.yml
