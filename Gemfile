@@ -51,3 +51,6 @@ gem 'rest_client'
 gem 'mongoid', github: 'mongoid/mongoid'
 
 #gem 'debugger', group: :development
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
